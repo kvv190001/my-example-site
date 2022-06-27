@@ -1,0 +1,115 @@
+/*
+Title font-family: 'Roboto', sans-serif;
+description font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+    font-family: 'Anek Latin', sans-serif;
+    color: white;
+    font-size: 3ch;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)), 
+            url(img/img-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75ch;
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5ch;
+}
+
+form {
+    background: rgba(27, 27, 50, 0.8);
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    padding: 0.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+}
+
+#name, #email, #number{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    margin-top: 5px;
+    padding: 0.25rem;
+    font-size: 1rem;
+}
+
+fieldset{
+    border: none;
+}
+
+select{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.input-radio, .input-checkbox{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+}
+
+textarea{
+    display: block;
+    height: 120px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    font-size: 1.15rem;
+}
+
+#submit{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(234, 187, 101, 0.7);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+}
